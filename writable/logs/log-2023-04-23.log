@@ -1,0 +1,17 @@
+CRITICAL - 2023-04-23 23:52:58 --> Undefined property: App\Controllers\Peminjaman::$ModelPeminjam
+in APPPATH\Controllers\Peminjaman.php on line 83.
+ 1 APPPATH\Controllers\Peminjaman.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Peminjaman::$ModelPeminjam', 'APPPATH\\Controllers\\Peminjaman.php', 83, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Peminjaman->DeleteData('25')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-23 23:53:16 --> Undefined index: id_pinjams
+in APPPATH\Models\ModelPeminjaman.php on line 30.
+ 1 APPPATH\Models\ModelPeminjaman.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_pinjams', 'APPPATH\\Models\\ModelPeminjaman.php', 30, [...])
+ 2 APPPATH\Controllers\Peminjaman.php(83): App\Models\ModelPeminjaman->DeleteData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Peminjaman->DeleteData('25')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

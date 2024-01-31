@@ -1,0 +1,396 @@
+ERROR - 2023-03-29 07:25:39 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\projectci4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'perpustakaan', 3306, '', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\projectci4\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\projectci4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\projectci4\app\Models\ModelPengaturan.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\projectci4\app\Controllers\Home.php(19): App\Models\ModelPengaturan->Slider()
+#6 C:\projectci4\system\CodeIgniter.php(904): App\Controllers\Home->index()
+#7 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\projectci4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\projectci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\projectci4\system\Commands\Server\rewrite.php(43): require_once('C:\\projectci4\\p...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\projectci4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\projectci4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\projectci4\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\projectci4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\projectci4\app\Models\ModelPengaturan.php(28): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\projectci4\app\Controllers\Home.php(19): App\Models\ModelPengaturan->Slider()
+#5 C:\projectci4\system\CodeIgniter.php(904): App\Controllers\Home->index()
+#6 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\projectci4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\projectci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\projectci4\system\Commands\Server\rewrite.php(43): require_once('C:\\projectci4\\p...')
+#10 {main}
+CRITICAL - 2023-03-29 07:25:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `slider`
+ORDER BY `id_slider` ASC', [], false)
+ 3 APPPATH\Models\ModelPengaturan.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(19): App\Models\ModelPengaturan->Slider()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 07:43:34 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Controllers\Auth.php on line 27.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Auth')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Auth')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Auth')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 09:33:16 --> Undefined variable: foto
+in APPPATH\Controllers\Pengaturan.php on line 86.
+ 1 APPPATH\Controllers\Pengaturan.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: foto', 'APPPATH\\Controllers\\Pengaturan.php', 86, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Pengaturan->UpdateWeb()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 09:33:45 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Pengaturan.php(95): CodeIgniter\Model->__call('UpdateData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Pengaturan->UpdateWeb()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 09:35:41 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Pengaturan.php(95): CodeIgniter\Model->__call('UpdateData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Pengaturan->UpdateWeb()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 09:36:24 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Pengaturan.php(95): CodeIgniter\Model->__call('UpdateData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Pengaturan->UpdateWeb()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 09:36:34 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Pengaturan.php(95): CodeIgniter\Model->__call('UpdateData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Pengaturan->UpdateWeb()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 09:37:44 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Pengaturan.php(95): CodeIgniter\Model->__call('UpdateData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Pengaturan->UpdateWeb()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 09:42:44 --> Call to undefined function App\Controllers\move()
+in APPPATH\Controllers\Pengaturan.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Pengaturan->UpdateWeb()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 09:45:26 --> unlink(logo/skanic.png): No such file or directory
+in APPPATH\Controllers\Pengaturan.php on line 100.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(logo/skanic.png): No such file or directory', 'APPPATH\\Controllers\\Pengaturan.php', 100, [...])
+ 2 APPPATH\Controllers\Pengaturan.php(100): unlink('logo/skanic.png')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Pengaturan->UpdateWeb()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 09:48:57 --> unlink(logo/skanic.png): No such file or directory
+in APPPATH\Controllers\Pengaturan.php on line 100.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(logo/skanic.png): No such file or directory', 'APPPATH\\Controllers\\Pengaturan.php', 100, [...])
+ 2 APPPATH\Controllers\Pengaturan.php(100): unlink('logo/skanic.png')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Pengaturan->UpdateWeb()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 09:54:34 --> unlink(logo/1680101636_bcaeb35cca7b753ee287.png): No such file or directory
+in APPPATH\Controllers\Pengaturan.php on line 100.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(logo/1680101636_bcaeb35cca7b753ee287.png): No such file or directory', 'APPPATH\\Controllers\\Pengaturan.php', 100, [...])
+ 2 APPPATH\Controllers\Pengaturan.php(100): unlink('logo/1680101636_bcaeb35cca7b753ee287.png')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Pengaturan->UpdateWeb()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 10:48:09 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+in APPPATH\Controllers\User.php on line 147.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('User')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('User')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('User')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 10:52:11 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+in APPPATH\Controllers\User.php on line 145.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('User')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('User')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('User')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 10:53:59 --> strpos(): Offset not contained in string
+in SYSTEMPATH\Validation\Validation.php on line 763.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos(): Offset not contained in string', 'SYSTEMPATH\\Validation\\Validation.php', 763, [...])
+ 2 SYSTEMPATH\Validation\Validation.php(763): strpos('uploade[foto]|max_size[foto,1024]|mime_in[logo,image/png],image/jpg,image/gif,image/jpeg,image/icon]', '|', 101)
+ 3 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\User.php(88): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 10:54:33 --> strpos(): Offset not contained in string
+in SYSTEMPATH\Validation\Validation.php on line 763.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos(): Offset not contained in string', 'SYSTEMPATH\\Validation\\Validation.php', 763, [...])
+ 2 SYSTEMPATH\Validation\Validation.php(763): strpos('uploaded[foto]|max_size[foto,1024]|mime_in[logo,image/png],image/jpg,image/gif,image/jpeg,image/icon]', '|', 102)
+ 3 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\User.php(88): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 10:54:58 --> strpos(): Offset not contained in string
+in SYSTEMPATH\Validation\Validation.php on line 763.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos(): Offset not contained in string', 'SYSTEMPATH\\Validation\\Validation.php', 763, [...])
+ 2 SYSTEMPATH\Validation\Validation.php(763): strpos('uploaded[foto]|max_size[foto,1024]|mime_in[foto,image/png],image/jpg,image/gif,image/jpeg,image/icon]', '|', 102)
+ 3 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\User.php(88): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 10:55:19 --> strpos(): Offset not contained in string
+in SYSTEMPATH\Validation\Validation.php on line 763.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos(): Offset not contained in string', 'SYSTEMPATH\\Validation\\Validation.php', 763, [...])
+ 2 SYSTEMPATH\Validation\Validation.php(763): strpos('uploaded[foto]|max_size[foto,1024]|mime_in[foto,image/png],image/jpg,image/gif,image/jpeg,image/icon]', '|', 102)
+ 3 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\User.php(88): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 10:56:34 --> strpos(): Offset not contained in string
+in SYSTEMPATH\Validation\Validation.php on line 763.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos(): Offset not contained in string', 'SYSTEMPATH\\Validation\\Validation.php', 763, [...])
+ 2 SYSTEMPATH\Validation\Validation.php(763): strpos('uploaded[foto]|max_size[foto,1024]|mime_in[foto,image/png],image/jpg,image/gif,image/jpeg,image/icon]', '|', 102)
+ 3 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\User.php(88): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 10:57:05 --> strpos(): Offset not contained in string
+in SYSTEMPATH\Validation\Validation.php on line 763.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos(): Offset not contained in string', 'SYSTEMPATH\\Validation\\Validation.php', 763, [...])
+ 2 SYSTEMPATH\Validation\Validation.php(763): strpos('max_size[foto,1024]|mime_in[foto,image/png],image/jpg,image/gif,image/jpeg,image/icon]', '|', 87)
+ 3 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\User.php(88): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 11:06:14 --> max_size:foto,1024 is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 316.
+ 1 SYSTEMPATH\Validation\Validation.php(316): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_size:foto,1024')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('FCPATH\\foto', 'FCPATH\\foto', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(88): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 11:07:38 --> strpos(): Offset not contained in string
+in SYSTEMPATH\Validation\Validation.php on line 763.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos(): Offset not contained in string', 'SYSTEMPATH\\Validation\\Validation.php', 763, [...])
+ 2 SYSTEMPATH\Validation\Validation.php(763): strpos('max_size[foto,1024]|mime_in[foto,image/png],image/jpg,image/gif,image/jpeg,image/icon]', '|', 87)
+ 3 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\User.php(88): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 11:14:34 --> Undefined variable: anggota
+in APPPATH\Controllers\User.php on line 239.
+ 1 APPPATH\Controllers\User.php(239): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: anggota', 'APPPATH\\Controllers\\User.php', 239, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->DeleteData('11')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 11:14:58 --> unlink(foto/1680106462_3a5a707cf): No such file or directory
+in APPPATH\Controllers\User.php on line 240.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(foto/1680106462_3a5a707cf): No such file or directory', 'APPPATH\\Controllers\\User.php', 240, [...])
+ 2 APPPATH\Controllers\User.php(240): unlink('foto/1680106462_3a5a707cf')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->DeleteData('11')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 11:17:46 --> unlink(C:\projectci4\foto/1680106462_3a5a707cf): No such file or directory
+in APPPATH\Controllers\User.php on line 240.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\projectci4\\foto/1680106462_3a5a707cf): No such file or directory', 'APPPATH\\Controllers\\User.php', 240, [...])
+ 2 APPPATH\Controllers\User.php(240): unlink('ROOTPATH\\foto/1680106462_3a5a707cf')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->DeleteData('11')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 11:18:30 --> unlink(C:\projectci4\public/foto/): Is a directory
+in APPPATH\Controllers\User.php on line 240.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\projectci4\\public/foto/): Is a directory', 'APPPATH\\Controllers\\User.php', 240, [...])
+ 2 APPPATH\Controllers\User.php(240): unlink('FCPATH\\foto')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->DeleteData('11')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 11:19:13 --> unlink(foto/1680106462_3a5a707cf): No such file or directory
+in APPPATH\Controllers\User.php on line 240.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(foto/1680106462_3a5a707cf): No such file or directory', 'APPPATH\\Controllers\\User.php', 240, [...])
+ 2 APPPATH\Controllers\User.php(240): unlink('foto/1680106462_3a5a707cf')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->DeleteData('11')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 11:19:54 --> Undefined variable: anggota
+in APPPATH\Controllers\User.php on line 241.
+ 1 APPPATH\Controllers\User.php(241): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: anggota', 'APPPATH\\Controllers\\User.php', 241, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->DeleteData('11')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 21:53:57 --> unlink(foto/1680106823_1971742f0): No such file or directory
+in APPPATH\Controllers\User.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(foto/1680106823_1971742f0): No such file or directory', 'APPPATH\\Controllers\\User.php', 209, [...])
+ 2 APPPATH\Controllers\User.php(209): unlink('foto/1680106823_1971742f0')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->UpdateData('8')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 21:53:58 --> unlink(foto/1680106823_1971742f0): No such file or directory
+in APPPATH\Controllers\User.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(foto/1680106823_1971742f0): No such file or directory', 'APPPATH\\Controllers\\User.php', 209, [...])
+ 2 APPPATH\Controllers\User.php(209): unlink('foto/1680106823_1971742f0')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->UpdateData('8')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 22:24:13 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+in APPPATH\Controllers\User.php on line 44.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('User/AddData')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('User/AddData')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('User/AddData')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 22:59:33 --> Too few arguments to function App\Models\ModelUser::DetailData(), 0 passed in C:\projectci4\app\Controllers\User.php on line 208 and exactly 1 expected
+in APPPATH\Models\ModelUser.php on line 16.
+ 1 APPPATH\Controllers\User.php(208): App\Models\ModelUser->DetailData()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->UpdateData('8')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 23:01:35 --> Too few arguments to function App\Models\ModelUser::DetailData(), 0 passed in C:\projectci4\app\Controllers\User.php on line 208 and exactly 1 expected
+in APPPATH\Models\ModelUser.php on line 16.
+ 1 APPPATH\Controllers\User.php(208): App\Models\ModelUser->DetailData()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->UpdateData('8')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 23:49:15 --> Too few arguments to function App\Models\ModelUser::DetailData(), 0 passed in C:\projectci4\app\Controllers\User.php on line 208 and exactly 1 expected
+in APPPATH\Models\ModelUser.php on line 16.
+ 1 APPPATH\Controllers\User.php(208): App\Models\ModelUser->DetailData()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->UpdateData('8')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 23:50:16 --> unlink(foto/1680148873_902a3e64d): No such file or directory
+in APPPATH\Controllers\User.php on line 210.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(foto/1680148873_902a3e64d): No such file or directory', 'APPPATH\\Controllers\\User.php', 210, [...])
+ 2 APPPATH\Controllers\User.php(210): unlink('foto/1680148873_902a3e64d')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->UpdateData('8')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 23:50:39 --> unlink(foto/1680148873_902a3e64d): No such file or directory
+in APPPATH\Controllers\User.php on line 210.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(foto/1680148873_902a3e64d): No such file or directory', 'APPPATH\\Controllers\\User.php', 210, [...])
+ 2 APPPATH\Controllers\User.php(210): unlink('foto/1680148873_902a3e64d')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->UpdateData('8')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 23:59:05 --> Undefined variable: foto
+in APPPATH\Views\user\v_editdata.php on line 33.
+ 1 APPPATH\Views\user\v_editdata.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: foto', 'APPPATH\\Views\\user\\v_editdata.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_editdata.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('user/v_editdata', [], true)
+ 5 APPPATH\Views\v_template_admin.php(261): view('user/v_editdata')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\User.php(133): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->EditData('12')
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

@@ -1,0 +1,14 @@
+CRITICAL - 2023-04-15 03:32:24 --> syntax error, unexpected '}', expecting end of file
+in APPPATH\Views\peminjaman\v_pengajuan.php on line 51.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('peminjaman/v_pengajuan', [], true)
+ 3 APPPATH\Views\v_template_anggota.php(172): view('peminjaman/v_pengajuan')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_template_anggota.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('v_template_anggota', [], true)
+ 7 APPPATH\Controllers\Peminjaman.php(38): view('v_template_anggota', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Peminjaman->Pengajuan()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

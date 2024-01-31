@@ -1,0 +1,111 @@
+CRITICAL - 2023-03-07 19:24:43 --> Undefined variable: request
+in APPPATH\Controllers\User.php on line 43.
+ 1 APPPATH\Controllers\User.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: request', 'APPPATH\\Controllers\\User.php', 43, [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-07 19:53:57 --> Use of undefined constant validate - assumed 'validate' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\Kategori.php on line 39.
+ 1 APPPATH\Controllers\Kategori.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant validate - assumed \'validate\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Controllers\\Kategori.php', 39, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Kategori->Add()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-07 20:10:42 --> min_lenght is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 316.
+ 1 SYSTEMPATH\Validation\Validation.php(316): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('nama_kategori', 'nama_kategori', 'Sejarah', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Kategori.php(54): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Kategori->EditData('7')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-07 20:39:02 --> syntax error, unexpected '}', expecting ']'
+in APPPATH\Controllers\User.php on line 107.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('User/AddData')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('User/AddData')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('User/AddData')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-07 20:39:04 --> syntax error, unexpected '}', expecting ']'
+in APPPATH\Controllers\User.php on line 107.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('User/AddData')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('User/AddData')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('User/AddData')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-07 20:50:09 --> min_lenght is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 316.
+ 1 SYSTEMPATH\Validation\Validation.php(316): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('nama_user', 'nama_user', 'as', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(46): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-07 20:50:30 --> min_lenght is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 316.
+ 1 SYSTEMPATH\Validation\Validation.php(316): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('nama_user', 'nama_user', 'as', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(46): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-07 20:50:42 --> min_lenght is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 316.
+ 1 SYSTEMPATH\Validation\Validation.php(316): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('nama_user', 'nama_user', 'dddd', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(46): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-07 20:52:06 --> min_lenght is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 316.
+ 1 SYSTEMPATH\Validation\Validation.php(316): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('nama_user', 'nama_user', 'dddd', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(46): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-07 20:54:04 --> min_lenght is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 316.
+ 1 SYSTEMPATH\Validation\Validation.php(316): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('nama_user', 'nama_user', 'ddddd', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(46): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-07 20:54:57 --> min_lenght is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 316.
+ 1 SYSTEMPATH\Validation\Validation.php(316): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('nama_user', 'nama_user', 'ddddd', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(46): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

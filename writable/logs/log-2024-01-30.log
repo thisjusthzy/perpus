@@ -1,0 +1,36 @@
+CRITICAL - 2024-01-30 23:21:07 --> Trying to get property 'kode_buku' of non-object
+in APPPATH\Models\ModelBuku.php on line 63.
+ 1 APPPATH\Models\ModelBuku.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'kode_buku\' of non-object', 'APPPATH\\Models\\ModelBuku.php', 63, [...])
+ 2 APPPATH\Controllers\Buku.php(48): App\Models\ModelBuku->getNoKodeBuku()
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Buku->AddData()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2024-01-30 23:27:54 --> mysqli_sql_exception: Unknown column 'ebooks' in 'field list' in C:\xampp\htdocs\perpuss\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\perpuss\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `eb...', 0)
+#1 C:\xampp\htdocs\perpuss\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `eb...')
+#2 C:\xampp\htdocs\perpuss\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `eb...')
+#3 C:\xampp\htdocs\perpuss\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `eb...', Array, false)
+#4 C:\xampp\htdocs\perpuss\app\Models\ModelEbook.php(31): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perpuss\app\Controllers\Ebook.php(144): App\Models\ModelEbook->AddData(Array)
+#6 C:\xampp\htdocs\perpuss\system\CodeIgniter.php(904): App\Controllers\Ebook->SimpanData()
+#7 C:\xampp\htdocs\perpuss\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ebook))
+#8 C:\xampp\htdocs\perpuss\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpuss\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perpuss\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-01-30 23:27:54 --> Unknown column 'ebooks' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ebook` (`judul_ebook`, `isbn`, `id_kategori`, `id_penulis`, `id_penerbit`, `tahun`, `bahasa`, `halaman`, `jumlah`, `cover`, `ebooks`) VALUES (\'malin kundang\', \'978-602-04-4003-3\', \'1\', \'1\', \'2\', \'2017\', \'indonesia\', \'16\', NULL, \'1706678873_ad185e2c08e5828be864.jpg\', \'1706678873_ec5c36f9c0a5b28150e6.pdf\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ebook` (`judul_ebook`, `isbn`, `id_kategori`, `id_penulis`, `id_penerbit`, `tahun`, `bahasa`, `halaman`, `jumlah`, `cover`, `ebooks`) VALUES (\'malin kundang\', \'978-602-04-4003-3\', \'1\', \'1\', \'2\', \'2017\', \'indonesia\', \'16\', NULL, \'1706678873_ad185e2c08e5828be864.jpg\', \'1706678873_ec5c36f9c0a5b28150e6.pdf\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ebook` (`judul_ebook`, `isbn`, `id_kategori`, `id_penulis`, `id_penerbit`, `tahun`, `bahasa`, `halaman`, `jumlah`, `cover`, `ebooks`) VALUES (\'malin kundang\', \'978-602-04-4003-3\', \'1\', \'1\', \'2\', \'2017\', \'indonesia\', \'16\', NULL, \'1706678873_ad185e2c08e5828be864.jpg\', \'1706678873_ec5c36f9c0a5b28150e6.pdf\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ebook` (`judul_ebook`, `isbn`, `id_kategori`, `id_penulis`, `id_penerbit`, `tahun`, `bahasa`, `halaman`, `jumlah`, `cover`, `ebooks`) VALUES (:judul_ebook:, :isbn:, :id_kategori:, :id_penulis:, :id_penerbit:, :tahun:, :bahasa:, :halaman:, :jumlah:, :cover:, :ebooks:)', [...], false)
+ 5 APPPATH\Models\ModelEbook.php(31): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Ebook.php(144): App\Models\ModelEbook->AddData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Ebook->SimpanData()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ebook))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

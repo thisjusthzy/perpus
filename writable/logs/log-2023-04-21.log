@@ -1,0 +1,97 @@
+CRITICAL - 2023-04-21 09:58:58 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Peminjaman.php(34): CodeIgniter\Model->__call('AllData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Peminjaman->Pengajuan()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-21 10:04:13 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Peminjaman.php(34): CodeIgniter\Model->__call('AllData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Peminjaman->Pengajuan()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-21 10:07:10 --> Class 'CodeIgniter\I18\Time' not found
+in APPPATH\Controllers\Peminjaman.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Peminjaman->AddPengajuan()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-21 10:08:41 --> Undefined variable: data
+in APPPATH\Models\ModelPeminjaman.php on line 11.
+ 1 APPPATH\Models\ModelPeminjaman.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Models\\ModelPeminjaman.php', 11, [])
+ 2 APPPATH\Controllers\Peminjaman.php(69): App\Models\ModelPeminjaman->AddData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Peminjaman->AddPengajuan()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-21 10:10:07 --> Undefined variable: data
+in APPPATH\Models\ModelPeminjaman.php on line 11.
+ 1 APPPATH\Models\ModelPeminjaman.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Models\\ModelPeminjaman.php', 11, [])
+ 2 APPPATH\Controllers\Peminjaman.php(69): App\Models\ModelPeminjaman->AddData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Peminjaman->AddPengajuan()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-21 10:14:18 --> Undefined variable: data
+in APPPATH\Models\ModelPeminjaman.php on line 11.
+ 1 APPPATH\Models\ModelPeminjaman.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Models\\ModelPeminjaman.php', 11, [])
+ 2 APPPATH\Controllers\Peminjaman.php(69): App\Models\ModelPeminjaman->AddData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Peminjaman->AddPengajuan()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-21 10:17:18 --> Undefined variable: data
+in APPPATH\Models\ModelPeminjaman.php on line 11.
+ 1 APPPATH\Models\ModelPeminjaman.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Models\\ModelPeminjaman.php', 11, [])
+ 2 APPPATH\Controllers\Peminjaman.php(69): App\Models\ModelPeminjaman->AddData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Peminjaman->AddPengajuan()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-21 10:17:53 --> Undefined variable: data
+in APPPATH\Models\ModelPeminjaman.php on line 11.
+ 1 APPPATH\Models\ModelPeminjaman.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Models\\ModelPeminjaman.php', 11, [])
+ 2 APPPATH\Controllers\Peminjaman.php(69): App\Models\ModelPeminjaman->AddData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Peminjaman->AddPengajuan()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-21 10:18:02 --> Undefined variable: data
+in APPPATH\Models\ModelPeminjaman.php on line 11.
+ 1 APPPATH\Models\ModelPeminjaman.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Models\\ModelPeminjaman.php', 11, [])
+ 2 APPPATH\Controllers\Peminjaman.php(69): App\Models\ModelPeminjaman->AddData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Peminjaman->AddPengajuan()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-21 10:40:04 --> Undefined variable: vlaue
+in APPPATH\Views\peminjaman\v_pengajuan.php on line 52.
+ 1 APPPATH\Views\peminjaman\v_pengajuan.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: vlaue', 'APPPATH\\Views\\peminjaman\\v_pengajuan.php', 52, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjaman\\v_pengajuan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('peminjaman/v_pengajuan', [], true)
+ 5 APPPATH\Views\v_template_anggota.php(172): view('peminjaman/v_pengajuan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_template_anggota.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('v_template_anggota', [], true)
+ 9 APPPATH\Controllers\Peminjaman.php(37): view('v_template_anggota', [...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Peminjaman->Pengajuan()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

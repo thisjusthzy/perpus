@@ -1,0 +1,634 @@
+ERROR - 2023-03-09 21:38:44 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\projectci4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'db_perpustakaan', 3306, '', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\projectci4\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\projectci4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\projectci4\app\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\projectci4\app\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+#6 C:\projectci4\system\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+#7 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\projectci4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\projectci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\projectci4\system\Commands\Server\rewrite.php(43): require_once('C:\\projectci4\\p...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\projectci4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\projectci4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\projectci4\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\projectci4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\projectci4\app\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\projectci4\app\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+#5 C:\projectci4\system\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+#6 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\projectci4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\projectci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\projectci4\system\Commands\Server\rewrite.php(43): require_once('C:\\projectci4\\p...')
+#10 {main}
+CRITICAL - 2023-03-09 21:38:44 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-03-09 21:46:48 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\projectci4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'db_perpustakaan', 3306, '', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\projectci4\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\projectci4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\projectci4\app\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\projectci4\app\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+#6 C:\projectci4\system\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+#7 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\projectci4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\projectci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\projectci4\system\Commands\Server\rewrite.php(43): require_once('C:\\projectci4\\p...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\projectci4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\projectci4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\projectci4\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\projectci4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\projectci4\app\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\projectci4\app\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+#5 C:\projectci4\system\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+#6 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\projectci4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\projectci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\projectci4\system\Commands\Server\rewrite.php(43): require_once('C:\\projectci4\\p...')
+#10 {main}
+CRITICAL - 2023-03-09 21:46:48 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-03-09 22:11:05 --> mysqli_sql_exception: Table 'db_perpustakaan.user' doesn't exist in engine in C:\projectci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\projectci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\projectci4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\projectci4\app\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\projectci4\app\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+#6 C:\projectci4\system\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+#7 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\projectci4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\projectci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\projectci4\system\Commands\Server\rewrite.php(43): require_once('C:\\projectci4\\p...')
+#11 {main}
+CRITICAL - 2023-03-09 22:11:05 --> Table 'db_perpustakaan.user' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 5 APPPATH\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-03-09 22:11:11 --> mysqli_sql_exception: Table 'db_perpustakaan.user' doesn't exist in engine in C:\projectci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\projectci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\projectci4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\projectci4\app\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\projectci4\app\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+#6 C:\projectci4\system\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+#7 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\projectci4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\projectci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\projectci4\system\Commands\Server\rewrite.php(43): require_once('C:\\projectci4\\p...')
+#11 {main}
+CRITICAL - 2023-03-09 22:11:11 --> Table 'db_perpustakaan.user' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 5 APPPATH\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-03-09 22:11:37 --> mysqli_sql_exception: Table 'db_perpustakaan.user' doesn't exist in engine in C:\projectci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\projectci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\projectci4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\projectci4\app\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\projectci4\app\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+#6 C:\projectci4\system\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+#7 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\projectci4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\projectci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\projectci4\system\Commands\Server\rewrite.php(43): require_once('C:\\projectci4\\p...')
+#11 {main}
+CRITICAL - 2023-03-09 22:11:37 --> Table 'db_perpustakaan.user' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 5 APPPATH\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-03-09 22:12:12 --> mysqli_sql_exception: Table 'db_perpustakaan.user' doesn't exist in engine in C:\projectci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\projectci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\projectci4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\projectci4\app\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\projectci4\app\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+#6 C:\projectci4\system\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+#7 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\projectci4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\projectci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\projectci4\system\Commands\Server\rewrite.php(43): require_once('C:\\projectci4\\p...')
+#11 {main}
+CRITICAL - 2023-03-09 22:12:12 --> Table 'db_perpustakaan.user' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 5 APPPATH\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-03-09 22:13:05 --> mysqli_sql_exception: Table 'db_perpustakaan.user' doesn't exist in engine in C:\projectci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\projectci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\projectci4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\projectci4\app\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\projectci4\app\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+#6 C:\projectci4\system\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+#7 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\projectci4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\projectci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\projectci4\system\Commands\Server\rewrite.php(43): require_once('C:\\projectci4\\p...')
+#11 {main}
+CRITICAL - 2023-03-09 22:13:05 --> Table 'db_perpustakaan.user' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 5 APPPATH\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-03-09 22:14:02 --> mysqli_sql_exception: Table 'db_perpustakaan.user' doesn't exist in engine in C:\projectci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\projectci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\projectci4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\projectci4\app\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\projectci4\app\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+#6 C:\projectci4\system\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+#7 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\projectci4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\projectci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\projectci4\system\Commands\Server\rewrite.php(43): require_once('C:\\projectci4\\p...')
+#11 {main}
+CRITICAL - 2023-03-09 22:14:02 --> Table 'db_perpustakaan.user' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 5 APPPATH\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-03-09 22:18:13 --> mysqli_sql_exception: Table 'db_perpustakaan.user' doesn't exist in engine in C:\projectci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\projectci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\projectci4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\projectci4\app\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\projectci4\app\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+#6 C:\projectci4\system\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+#7 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\projectci4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\projectci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\projectci4\system\Commands\Server\rewrite.php(43): require_once('C:\\projectci4\\p...')
+#11 {main}
+CRITICAL - 2023-03-09 22:18:13 --> Table 'db_perpustakaan.user' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+WHERE `email` = \'admin@gmail.com\'
+AND `password` = \'211006\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 5 APPPATH\Models\ModelAuth.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Auth.php(52): App\Models\ModelAuth->LoginUser('admin@gmail.com', '211006')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Auth->CekLoginUser()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-03-09 22:28:30 --> mysqli_sql_exception: Table 'migrations' already exists in C:\projectci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\projectci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\projectci4\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\projectci4\system\Database\MigrationRunner.php(806): CodeIgniter\Database\Forge->createTable('migrations', true)
+#5 C:\projectci4\system\Database\MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\projectci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\projectci4\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\projectci4\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\projectci4\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 C:\projectci4\system\CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 C:\projectci4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\projectci4\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 C:\projectci4\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+ERROR - 2023-03-09 22:29:13 --> mysqli_sql_exception: Table 'migrations' already exists in C:\projectci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\projectci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\projectci4\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\projectci4\system\Database\MigrationRunner.php(806): CodeIgniter\Database\Forge->createTable('migrations', true)
+#5 C:\projectci4\system\Database\MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\projectci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\projectci4\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\projectci4\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\projectci4\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 C:\projectci4\system\CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 C:\projectci4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\projectci4\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 C:\projectci4\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+ERROR - 2023-03-09 22:30:42 --> mysqli_sql_exception: Table 'migrations' already exists in C:\projectci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\projectci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\projectci4\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\projectci4\system\Database\MigrationRunner.php(806): CodeIgniter\Database\Forge->createTable('migrations', true)
+#5 C:\projectci4\system\Database\MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\projectci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\projectci4\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\projectci4\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\projectci4\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 C:\projectci4\system\CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 C:\projectci4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\projectci4\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 C:\projectci4\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+ERROR - 2023-03-09 22:41:03 --> mysqli_sql_exception: Table 'migrations' already exists in C:\projectci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\projectci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\projectci4\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\projectci4\system\Database\MigrationRunner.php(806): CodeIgniter\Database\Forge->createTable('migrations', true)
+#5 C:\projectci4\system\Database\MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\projectci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\projectci4\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\projectci4\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\projectci4\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 C:\projectci4\system\CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 C:\projectci4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\projectci4\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 C:\projectci4\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+ERROR - 2023-03-09 22:41:40 --> mysqli_sql_exception: Table 'migrations' already exists in C:\projectci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\projectci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\projectci4\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\projectci4\system\Database\MigrationRunner.php(806): CodeIgniter\Database\Forge->createTable('migrations', true)
+#5 C:\projectci4\system\Database\MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\projectci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\projectci4\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\projectci4\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\projectci4\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 C:\projectci4\system\CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 C:\projectci4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\projectci4\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 C:\projectci4\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+ERROR - 2023-03-09 22:42:29 --> mysqli_sql_exception: Table 'migrations' already exists in C:\projectci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\projectci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\projectci4\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\projectci4\system\Database\MigrationRunner.php(806): CodeIgniter\Database\Forge->createTable('migrations', true)
+#5 C:\projectci4\system\Database\MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\projectci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\projectci4\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\projectci4\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\projectci4\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 C:\projectci4\system\CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 C:\projectci4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\projectci4\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 C:\projectci4\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+ERROR - 2023-03-09 22:43:07 --> mysqli_sql_exception: Table 'migrations' already exists in C:\projectci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\projectci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\projectci4\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\projectci4\system\Database\MigrationRunner.php(806): CodeIgniter\Database\Forge->createTable('migrations', true)
+#5 C:\projectci4\system\Database\MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\projectci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\projectci4\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\projectci4\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\projectci4\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 C:\projectci4\system\CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 C:\projectci4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\projectci4\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 C:\projectci4\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+ERROR - 2023-03-09 22:45:17 --> mysqli_sql_exception: Table 'migrations' already exists in C:\projectci4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\projectci4\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `m...', 0)
+#1 C:\projectci4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 C:\projectci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 C:\projectci4\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 C:\projectci4\system\Database\MigrationRunner.php(806): CodeIgniter\Database\Forge->createTable('migrations', true)
+#5 C:\projectci4\system\Database\MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\projectci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\projectci4\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\projectci4\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\projectci4\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 C:\projectci4\system\CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 C:\projectci4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 C:\projectci4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\projectci4\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 C:\projectci4\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+CRITICAL - 2023-03-09 22:56:15 --> Undefined index: no_hp
+in APPPATH\Views\user\v_index.php on line 46.
+ 1 APPPATH\Views\user\v_index.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: no_hp', 'APPPATH\\Views\\user\\v_index.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('user/v_index', [], true)
+ 5 APPPATH\Views\v_template_admin.php(217): view('user/v_index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\User.php(27): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->index()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-09 23:02:55 --> Undefined index: foto
+in APPPATH\Views\user\v_index.php on line 48.
+ 1 APPPATH\Views\user\v_index.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: foto', 'APPPATH\\Views\\user\\v_index.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('user/v_index', [], true)
+ 5 APPPATH\Views\v_template_admin.php(217): view('user/v_index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\User.php(27): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->index()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-09 23:05:30 --> min_lenght is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 316.
+ 1 SYSTEMPATH\Validation\Validation.php(316): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('nama_kategori', 'nama_kategori', 'r', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Kategori.php(33): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Kategori->Add()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-09 23:07:00 --> Undefined index: nama_rak
+in APPPATH\Views\v_rak.php on line 39.
+ 1 APPPATH\Views\v_rak.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_rak', 'APPPATH\\Views\\v_rak.php', 39, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_rak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('v_rak', [], true)
+ 5 APPPATH\Views\v_template_admin.php(217): view('v_rak')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\Rak.php(27): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Rak->index()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rak))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-09 23:08:32 --> min_lenght is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 316.
+ 1 SYSTEMPATH\Validation\Validation.php(316): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('nama_user', 'nama_user', 'ddddd', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(46): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-09 23:08:41 --> min_lenght is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 316.
+ 1 SYSTEMPATH\Validation\Validation.php(316): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('nama_user', 'nama_user', 'ddddd', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(46): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-09 23:12:20 --> min_lenght is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 316.
+ 1 SYSTEMPATH\Validation\Validation.php(316): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('nama_user', 'nama_user', 'ddddd', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(46): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-09 23:25:47 --> E-Mail is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 316.
+ 1 SYSTEMPATH\Validation\Validation.php(316): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('E-Mail')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'subak@gmail.com', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(63): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-09 23:26:01 --> E-Mail is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 316.
+ 1 SYSTEMPATH\Validation\Validation.php(316): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('E-Mail')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'subak@gmail.com', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(63): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-09 23:26:22 --> E-Mail is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 316.
+ 1 SYSTEMPATH\Validation\Validation.php(316): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('E-Mail')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'dinda@gmail.com', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(63): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User->SimpanData()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
